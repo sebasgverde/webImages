@@ -1,0 +1,26 @@
+Instrucciones de instalacion
+
+software requerido server
+-netbeans
+	-html5
+	-php
+-mySQL
+-algun gestor de DB (recomendado phpmyadmin)
+-apache web server
+
+software requerido cliente
+-browser compatible con php y html (probado hasta ahora en google chrome e internet explorer)
+
+En el servidor
+1. Ubicar la carpeta "Reto1WebImagen", en la carpeta home del servidor
+2. Crear una nueva base de datos mySQL llamada "sgarci18_reto1"
+3. Usar el archivo sgarci18_reto1.sql para crear las tablas
+4. Cambiar en el archivo Reto1WebImagen/conexion.php la linea 3
+
+	$conexion=mysql_connect ('localhost','root','') or die ('No hay conexion a la base de datos');
+	
+	de manera que en 'root' quede el nombre de usuario mysql, y en en eque sigue la contraseña, por ejmplo
+	
+	$conexion=mysql_connect ('localhost','pepito','abcd1234') or die ('No hay conexion a la base de datos');
+
+
